@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 require('dotenv').config();
-const schedule = require("node-schedule")
 
 const client = new Discord.Client();
 
