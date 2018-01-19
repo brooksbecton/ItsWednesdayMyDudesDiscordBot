@@ -16,9 +16,6 @@ client.on('ready', () => {
 
     botMiddleware.add(checkIfWednesday);
     botMiddleware.add(pingPong);
-
-    // schedule.scheduleJob({ hour: 8, minute: 01, dayOfWeek: 3 }, function () {
-    // });
 });
 
 client.on('message', (message) => {
