@@ -6,6 +6,16 @@
 
 Bot that will tell a channel that it is Wednesday and will link a "It's Wednesday my dudes" meme
 
+## Setup
+
+You will need an .env file in the root of the project with structure like
+
+```env
+token=YOUR_DISCORD_TOKEN
+```
+
+[How to get a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+
 ## Functionality
 
 * Listens for "_my dude_" and "_wednesday_" and will tell you if it is Wednesday
