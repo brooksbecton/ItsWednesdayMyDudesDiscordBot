@@ -1,10 +1,10 @@
 function checkIfWednesday(message) {
-  const content = message.content.toLocaleLowerCase();
+  const content = message.content;
   if (
-    content.indexOf("my dude") > -1 &&
+    content.toLocaleLowerCase().indexOf("my dude") > -1 &&
     message.author.username !== "ItsWednesdayMyDudes"
   ) {
-    if (content.indexOf("wednesday") > -1) {
+    if (content.indexOf("Wednesday") > -1) {
       const isWednesday = new Date().getDay() === 3;
 
       if (isWednesday) {
