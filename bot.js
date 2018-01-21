@@ -7,6 +7,9 @@ const Middleware = require("./middleware/Middleware");
 
 const checkIfWednesday = require("./middleware/checkIfWednesday/");
 const pingPong = require("./middleware/pingPong/");
+const bangModules = require("./middleware/bangModules");
+
+
 
 const botMiddleware = new Middleware();
 client.on("ready", () => {
@@ -14,6 +17,7 @@ client.on("ready", () => {
 
   botMiddleware.add(checkIfWednesday);
   botMiddleware.add(pingPong);
+  botMiddleware.add(bangModules);
 });
 
 client.on("message", message => {

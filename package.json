@@ -11,7 +11,12 @@
         "type": "git",
         "url": "git+https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot.git"
     },
-    "keywords": ["discord", "bot", "js", "node"],
+    "keywords": [
+        "discord",
+        "bot",
+        "js",
+        "node"
+    ],
     "author": "Brooks Becton",
     "license": "MIT",
     "bugs": {
@@ -19,8 +24,13 @@
     },
     "homepage": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot#readme",
     "dependencies": {
+        "discord.io": "^2.5.3",
         "discord.js": "^11.3.0",
-        "dotenv": "^4.0.0"
+        "dotenv": "^4.0.0",
+        "giphy-api-without-credentials": "^1.1.0",
+        "http": "0.0.0",
+        "request": "^2.83.0",
+        "winston": "^2.4.0"
     },
     "devDependencies": {
         "codecov": "^3.0.0",
