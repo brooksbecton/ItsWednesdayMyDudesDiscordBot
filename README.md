@@ -16,6 +16,12 @@ token=YOUR_DISCORD_TOKEN
 
 [How to get a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
+After that, assign the name of the Bot that will be running the script to botName
+
+```
+botName=YOUR_BOT_NAME
+```
+
 ## Functionality
 
 * Listens for "_my dude_" and "_wednesday_" and will tell you if it is Wednesday
