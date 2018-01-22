@@ -1,8 +1,7 @@
 {
   "name": "itswednesdaymydudesdiscordbot",
   "version": "1.0.0",
-  "description":
-    "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
+  "description": "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
@@ -11,21 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot.git"
+    "url": "git+https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot.git"
   },
-  "keywords": ["discord", "bot", "js", "node"],
+  "keywords": [
+    "discord",
+    "bot",
+    "js",
+    "node"
+  ],
   "author": "Brooks Becton",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot/issues"
+    "url": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot/issues"
   },
-  "homepage":
-    "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot#readme",
+  "homepage": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot#readme",
   "dependencies": {
     "discord.js": "^11.3.0",
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "node-fetch": "^1.7.3"
   },
   "devDependencies": {
     "codecov": "^3.0.0",
