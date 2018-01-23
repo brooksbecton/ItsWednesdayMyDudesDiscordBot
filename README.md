@@ -11,12 +11,18 @@ Bot that will tell a channel that it is Wednesday and will link a "It's Wednesda
 You will need an .env file in the root of the project with structure like
 
 ```env
-token=YOUR_DISCORD_TOKEN
+token="YOUR_DISCORD_TOKEN"
+youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 ```
 
-[How to get a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+API Key Links
+
+* [How to get a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+* [How to get a Youtube API key](https://developers.google.com/youtube/registering_an_application#Create_API_Keys)
 
 ## Functionality
 
-* Listens for "_my dude_" and "_wednesday_" and will tell you if it is Wednesday
+* Listens for "_my dude_" and
+  * "_wednesday_" and will tell you if it is Wednesday
+  * "_video_" and will post a frog meme video
 * Listens for "_ping_" and will reply with "_pong_", by popular demand
