@@ -1,33 +1,40 @@
 {
-    "name": "itswednesdaymydudesdiscordbot",
-    "version": "1.0.0",
-    "description": "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
-    "main": "bot.js",
-    "scripts": {
-        "start": "node bot.js",
-        "test": "jest && codecov -t 09bc5760-6a3d-4d4b-a5c8-08187d0fb57c"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot.git"
-    },
-    "keywords": ["discord", "bot", "js", "node"],
-    "author": "Brooks Becton",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot/issues"
-    },
-    "homepage": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot#readme",
-    "dependencies": {
-        "discord.js": "^11.3.0",
-        "dotenv": "^4.0.0"
-    },
-    "devDependencies": {
-        "codecov": "^3.0.0",
-        "jest": "^22.1.3"
-    },
-    "jest": {
-        "coverageDirectory": "./coverage/",
-        "collectCoverage": true
-    }
+  "name": "itswednesdaymydudesdiscordbot",
+  "version": "1.0.0",
+  "description": "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "jest && codecov -t 09bc5760-6a3d-4d4b-a5c8-08187d0fb57c",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "js",
+    "node"
+  ],
+  "author": "Brooks Becton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot/issues"
+  },
+  "homepage": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot#readme",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "dotenv": "^4.0.0",
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "jest": "^22.1.3"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }
