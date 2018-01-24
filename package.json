@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "start": "node bot.js",
-    "test": "jest && codecov -t 09bc5760-6a3d-4d4b-a5c8-08187d0fb57c",
+    "test": "npm run lint && jest && codecov -t 09bc5760-6a3d-4d4b-a5c8-08187d0fb57c",
     "test:watch": "jest --watch"
   },
   "repository": {
