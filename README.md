@@ -15,10 +15,14 @@ token="YOUR_DISCORD_TOKEN"
 youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 ```
 
-API Key Links
+### API Key Links
 
 * [How to get a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 * [How to get a Youtube API key](https://developers.google.com/youtube/registering_an_application#Create_API_Keys)
+
+### Timezone Note
+
+NodeJS gets time from the server it is running on. So if you want an accurate Wednesday announcement, you must configure the server time to match the audience's time. 
 
 ## Functionality
 
