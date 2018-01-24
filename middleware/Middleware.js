@@ -16,7 +16,7 @@ class Middleware {
    * @param {Object} message - discord.js message obj
    */
   run(message) {
-    this.middleware.forEach(middleware => {
+    this.middleware.forEach((middleware) => {
       middleware(message);
     });
   }
