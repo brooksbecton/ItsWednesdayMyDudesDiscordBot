@@ -27,6 +27,7 @@ youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 [How to Add a Webhook to Discord Server](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 Once added your webhook should look like: `https://discordapp.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN`
+
 Pull these out and add to the .env file
 
 ### Timezone Note
