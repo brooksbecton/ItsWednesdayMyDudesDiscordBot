@@ -11,14 +11,23 @@ Bot that will tell a channel that it is Wednesday and will link a "It's Wednesda
 You will need an .env file in the root of the project with structure like
 
 ```env
-token="YOUR_DISCORD_TOKEN"
+token="YOUR_TOKEN"
+webhookId="YOUR_WEBHOOK_ID"
+webhookToken="YOUR_WEBHOOK_TOKEN"
 youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 ```
 
-### API Key Links
+### Keys
 
 * [How to get a Discord token](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 * [How to get a Youtube API key](https://developers.google.com/youtube/registering_an_application#Create_API_Keys)
+
+#### Webhooks
+
+[How to Add a Webhook to Discord Server](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+
+Once added your webhook should look like: `https://discordapp.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN`
+Pull these out and add to the .env file
 
 ### Timezone Note
 
