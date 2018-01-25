@@ -1,23 +1,21 @@
 {
   "name": "itswednesdaymydudesdiscordbot",
   "version": "1.0.0",
-  "description": "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
+  "description":
+    "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
   "main": "bot.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "start": "node bot.js",
-    "test": "jest && codecov -t 09bc5760-6a3d-4d4b-a5c8-08187d0fb57c",
+    "test": "npm run lint && jest && codecov -t 09bc5760-6a3d-4d4b-a5c8-08187d0fb57c",
     "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot.git"
   },
-  "keywords": [
-    "discord",
-    "bot",
-    "js",
-    "node"
-  ],
+  "keywords": ["discord", "bot", "js", "node"],
   "author": "Brooks Becton",
   "license": "MIT",
   "bugs": {
@@ -31,6 +29,9 @@
   },
   "devDependencies": {
     "codecov": "^3.0.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "jest": "^22.1.3"
   },
   "jest": {
