@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 require("dotenv").config();
-
 const client = new Discord.Client();
 
 const Middleware = require("./middleware/Middleware");
@@ -12,7 +11,7 @@ const pingPong = require("./middleware/pingPong/");
 const botMiddleware = new Middleware();
 client.on("ready", () => {
   console.log("Started on: " + new Date());
-
+  console.log("Your bot name is: " + process.env.botName)
   botMiddleware.add(checkIfWednesday);
   botMiddleware.add(getWedYoutubeVideo);
   botMiddleware.add(pingPong);

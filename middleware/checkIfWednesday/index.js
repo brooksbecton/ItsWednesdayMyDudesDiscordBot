@@ -3,9 +3,10 @@ const getWedYoutubeVideos = require("./../../lib/getWedYoutubeVideos/");
 
 async function checkIfWednesday(message) {
   const content = message.content.toLocaleLowerCase();
+  
   if (
     content.indexOf("my dude") > -1 &&
-    message.author.username !== "ItsWednesdayMyDudes"
+    message.author.username !== process.env.botName
   ) {
     if (content.indexOf("wednesday") > -1) {
       const isWednesday = new Date().getDay() === 3;
