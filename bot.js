@@ -15,7 +15,6 @@ const botMiddleware = new Middleware();
 
 client.on("ready", () => {
   console.log("Started on: " + new Date());
-  console.log("Your bot name is: " + process.env.botName)
 
   botMiddleware.add(checkIfWednesday);
   botMiddleware.add(getWedYoutubeVideo);
