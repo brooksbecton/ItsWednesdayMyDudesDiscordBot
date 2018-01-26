@@ -12,6 +12,7 @@ You will need an .env file in the root of the project with structure like
 
 ```env
 token="YOUR_DISCORD_TOKEN"
+botname="YOUR_BOTS_NAME"
 youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 ```
 
