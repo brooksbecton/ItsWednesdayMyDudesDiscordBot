@@ -1,4 +1,5 @@
 {
+
     "name": "itswednesdaymydudesdiscordbot",
     "version": "1.0.0",
     "description": "Bot that will tell a channel that it is Wednesday and will link a \"It's Wednesday my dudes meme\" Edit",
@@ -40,4 +41,5 @@
         "coverageDirectory": "./coverage/",
         "collectCoverage": true
     }
+
 }
