@@ -3,9 +3,9 @@ const getWedYoutubeVideos = require('./../../lib/getWedYoutubeVideos/');
 
 async function checkIfWednesday(message) {
   const content = message.content.toLocaleLowerCase();
-  
+
   if (
-    content.indexOf("my dude") > -1 &&
+    content.indexOf('my dude') > -1 &&
     message.author.username !== process.env.botName
 
   ) {

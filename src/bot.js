@@ -13,8 +13,8 @@ const pingPong = require('./middleware/pingPong/');
 
 const botMiddleware = new Middleware();
 
-client.on("ready", () => {
-  console.log("Started on: " + new Date());
+client.on('ready', () => {
+  console.log(`Started on: ${new Date()}`);
 
   botMiddleware.add(checkIfWednesday);
   botMiddleware.add(getWedYoutubeVideo);
