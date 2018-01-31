@@ -12,6 +12,7 @@ You will need an .env file in the root of the project with structure like
 
 ```env
 token="YOUR_TOKEN"
+botname="YOUR_BOTS_NAME"
 webhookId="YOUR_WEBHOOK_ID"
 webhookToken="YOUR_WEBHOOK_TOKEN"
 youtubeApiKey="YOUR_YOUTUBE_API_KEY"
@@ -32,7 +33,7 @@ Pull these out and add to the .env file
 
 ### Timezone Note
 
-NodeJS gets time from the server it is running on. So if you want an accurate Wednesday announcement, you must configure the server time to match the audience's time. 
+NodeJS gets time from the server it is running on. So if you want an accurate Wednesday announcement, you must configure the server time to match the audience's time.
 
 ## Functionality
 
