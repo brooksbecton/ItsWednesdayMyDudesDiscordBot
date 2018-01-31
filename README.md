@@ -95,7 +95,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Brooks Becton** - *Initial work* - [brooksbecton](https://github.com/brooksbecton)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot/contributors) who participated in this project.
 
 ## License
 
