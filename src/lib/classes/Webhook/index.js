@@ -8,7 +8,7 @@ class Webhook {
   }
 
   sendMessage(msg: string) {
-    hook.send();
+    this.hook.send(msg);
   }
 }
 

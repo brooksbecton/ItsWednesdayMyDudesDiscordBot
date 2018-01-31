@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot#readme",
   "dependencies": {
+    "@types/jest": "^22.1.1",
     "discord.js": "^11.3.0",
     "dotenv": "^4.0.0",
     "node-fetch": "^1.7.3",
