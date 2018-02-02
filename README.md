@@ -6,27 +6,26 @@
 
 Discord Bot that will tell a channel that it is Wednesday and will link a "It's Wednesday my dudes" meme
 
-## Features 
+## Features
 
 * Listens for "my dude" and
   * "wednesday" and will tell you if it is Wednesday
   * "video" and will post a frog meme video
-* Will post that it is Wednesday on Wednesday 
+* Will post that it is Wednesday on Wednesday
 
 ### Examples
 
 #### Checking if Wednesday
+
 **User "bob" Types**: `My dude, is it Wednesday?`
 
-**Response**: `@bob, It is Wednesday my dude! 
- eeeeeeeAAAAAhhhhhahahHAHahAHHAhAHHAhHAhAhHAhHHAAAAAAAAAA 
-  https://www.youtube.com/watch?v=fyJGKEswuSc`
+**Response**: `@bob, It is Wednesday my dude! eeeeeeeAAAAAhhhhhahahHAHahAHHAhAHHAhHAhAhHAhHHAAAAAAAAAA https://www.youtube.com/watch?v=fyJGKEswuSc`
 
 #### Asking for Wednesday Video
+
 **User "bob" Types**: `My dude let me get a video`
 
 **Response**: `@bob, https://www.youtube.com/watch?v=szqNmefKXxc`
-
 
 ## Getting Started
 
@@ -48,7 +47,7 @@ Discord Bot that will tell a channel that it is Wednesday and will link a "It's 
 You will need an .env file in the root of the project with structure like
 
 ```env
-token="YOUR_DISCORD_TOKEN"
+token="YOUR_TOKEN"
 botname="YOUR_BOTS_NAME"
 webhookId="YOUR_WEBHOOK_ID"
 webhookToken="YOUR_WEBHOOK_TOKEN"
@@ -75,6 +74,7 @@ youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 ## Notes
 
 ### Timezone
+
 NodeJS gets time from the server it is running on. So if you want an accurate Wednesday announcement, you must configure the server time to match the audience's timezone.
 
 ## Built With
@@ -92,8 +92,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-
-* **Brooks Becton** - *Initial work* - [brooksbecton](https://github.com/brooksbecton)
+* **Brooks Becton** - _Initial work_ - [brooksbecton](https://github.com/brooksbecton)
 
 See also the list of [contributors](https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot/contributors) who participated in this project.
 
