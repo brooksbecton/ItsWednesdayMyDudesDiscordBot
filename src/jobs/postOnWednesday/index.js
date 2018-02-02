@@ -10,9 +10,8 @@ const Webhook = require('./../../lib/classes/Webhook');
  */
 function postOnWednesday() {
   const hook = new Webhook();
-
-  schedule.scheduleJob({ hour: 0, minute: 0, dayOfWeek: 3 }, () => {
-    const videoUrls = getWedYoutubeVideos();
+  schedule.scheduleJob({ minute: 45 }, async () => {
+    const videoUrls = await getWedYoutubeVideos();
     const randomInt = getRandomInt(videoUrls.length);
     const randomVideo = videoUrls[randomInt];
     hook.sendMessage(`It is Wednesday my dudes ${randomVideo}`);
