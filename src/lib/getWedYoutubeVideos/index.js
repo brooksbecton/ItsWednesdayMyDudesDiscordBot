@@ -1,8 +1,8 @@
-const fetch = require("node-fetch");
-require("dotenv").config("./../../");
+const fetch = require('node-fetch');
+require('dotenv').config('./../../');
 /**
  * Endpoint: https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLy3-VH7qrUZ5IVq_lISnoccVIYZCMvi-8&maxResults=50&key=YOUTUBE_API_KEY
- * Response:
+ * Example Response:
  * {
  *   "kind": "youtube#playlistItemListResponse",
  *   "etag": "\"g7k5f8kvn67Bsl8L-Bum53neIr4/EBxT0hDTn5jnQFrx6RBysV_-UW4\"",
@@ -25,13 +25,17 @@ require("dotenv").config("./../../");
  * }
  */
 
+/**
+ * Queries a specific youtube playlist 
+ * and returns an array of those videos
+ * @returns {Array} - Video Urls
+ */
 async function getWedYoutubeVideos() {
-  let videoUrls = [];
-  const baseYoutubeUrl = "https://www.youtube.com/watch?v=";
-  const resp = await fetch(
-    "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLy3-VH7qrUZ5IVq_lISnoccVIYZCMvi-8&maxResults=50&key=" +
-      process.env.youtubeApiKey
-  );
+  const videoUrls = [];
+  const baseYoutubeUrl = 'https://www.youtube.com/watch?v=';
+  const resp = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLy3-VH7qrUZ5IVq_lISnoccVIYZCMvi-8&maxResults=50&key=${
+    process.env.youtubeApiKey
+  }`);
 
   if (resp.status === 200) {
     const body = await resp.text();
@@ -44,6 +48,7 @@ async function getWedYoutubeVideos() {
 
     return videoUrls;
   }
+  return [];
 }
 
 module.exports = getWedYoutubeVideos;
