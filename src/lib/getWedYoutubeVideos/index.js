@@ -26,7 +26,7 @@ require('dotenv').config('./../../');
  */
 
 /**
- * Queries a specific youtube playlist 
+ * Queries a specific youtube playlist
  * and returns an array of those videos
  * @returns {Array} - Video Urls
  */

@@ -5,8 +5,8 @@ async function checkIfWednesday(message) {
   const content = message.content.toLocaleLowerCase();
 
   if (
-    content.indexOf('my dude') > -1 &&
-    message.author.username !== process.env.botName
+    content.indexOf('my dude') > -1
+    && message.author.username !== process.env.botName
 
   ) {
     if (content.indexOf('wednesday') > -1) {

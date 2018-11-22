@@ -1,7 +1,7 @@
-const postOnWednesday = require('./postOnWednesday')
+const postOnWednesday = require('./postOnWednesday');
 
-function startJobs(){
-    postOnWednesday();
+function startJobs() {
+  postOnWednesday();
 }
 
-module.exports = startJobs; 
+module.exports = startJobs;
