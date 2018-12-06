@@ -10,6 +10,9 @@ async function checkIfWednesday(message) {
     message: 'Checking if Wednesday',
     discordMsg: message,
   });
+  if (
+    content.indexOf('my dude') > -1
+    && message.author.username !== process.env.botName
 
   if (message.author.username !== process.env.botName) {
     if (content.indexOf('my dude') > -1 && content.indexOf('wednesday') > -1) {

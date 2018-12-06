@@ -6,6 +6,8 @@
 
 Discord Bot that will tell a channel that it is Wednesday and will link a "It's Wednesday my dudes" meme
 
+[Add The ItsWednesdayMyDudes Bot to your server](https://discordapp.com/oauth2/authorize?&client_id=403577986504196096&scope=bot&permissions=0)
+
 ## Features
 
 * Listens for "my dude" and
