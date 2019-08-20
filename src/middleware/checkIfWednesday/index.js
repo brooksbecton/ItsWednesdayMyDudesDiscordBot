@@ -10,37 +10,35 @@ async function checkIfWednesday(message) {
     message: 'Checking if Wednesday',
     discordMsg: message,
   });
-  if (
-    content.indexOf('my dude') > -1
-    && message.author.username !== process.env.botName
 
-  if (message.author.username !== process.env.botName) {
-    if (content.indexOf('my dude') > -1 && content.indexOf('wednesday') > -1) {
-      const isWednesday = new Date().getDay() === 3;
 
-      if (isWednesday) {
-        log({
-          level: 'debug',
-          message: 'Checking if Wednesday',
-          discordMsg: message,
-        });
+  if (message.author.username !== process.env.botName
+      && content.indexOf('my dude') > -1
+      && content.indexOf('wednesday') > -1) {
+    const isWednesday = new Date().getDay() === 3;
 
-        const videoUrls = await getWedYoutubeVideos();
-        const videoCount = videoUrls.length;
-        const randomVideoIndex = getRandomInt(videoCount);
-        const randomVideo = videoUrls[randomVideoIndex];
+    if (isWednesday) {
+      log({
+        level: 'debug',
+        message: 'Checking if Wednesday',
+        discordMsg: message,
+      });
 
-        message.reply(
-          `It is Wednesday my dude! \n eeeeeeeAAAAAhhhhhahahHAHahAHHAhAHHAhHAhAhHAhHHAAAAAAAAAA \n  ${randomVideo}`,
-        );
-        log({
-          level: 'debug',
-          message: 'Checking if Wednesday',
-          discordMsg: message,
-        });
-      } else {
-        message.reply("It's NOT Wednesday my dude :(");
-      }
+      const videoUrls = await getWedYoutubeVideos();
+      const videoCount = videoUrls.length;
+      const randomVideoIndex = getRandomInt(videoCount);
+      const randomVideo = videoUrls[randomVideoIndex];
+
+      message.reply(
+        `It is Wednesday my dude! \n eeeeeeeAAAAAhhhhhahahHAHahAHHAhAHHAhHAhAhHAhHHAAAAAAAAAA \n  ${randomVideo}`,
+      );
+      log({
+        level: 'debug',
+        message: 'Checking if Wednesday',
+        discordMsg: message,
+      });
+    } else {
+      message.reply("It's NOT Wednesday my dude :(");
     }
   } else {
     log({
