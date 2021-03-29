@@ -32,7 +32,7 @@
     "@types/jest": "^24.0.24",
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-schedule": "^1.3.2",
     "winston": "^3.2.1"
   },
