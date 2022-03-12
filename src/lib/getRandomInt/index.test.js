@@ -8,7 +8,7 @@ describe('getRandomInt', () => {
       results.push(getRandomInt(maximum));
     }
 
-    const everyNumberIsUnderMaximum = results.every(num => num < maximum);
+    const everyNumberIsUnderMaximum = results.every((num) => num < maximum);
 
     expect(everyNumberIsUnderMaximum).toBe(true);
   });

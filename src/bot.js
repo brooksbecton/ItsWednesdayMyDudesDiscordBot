@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 require('dotenv').config();
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+  intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES],
+});
 
 const Middleware = require('./middleware/Middleware');
 
@@ -21,7 +23,7 @@ client.on('ready', () => {
   botMiddleware.add(pingPong);
 });
 
-client.on('message', (message) => {
+client.on('messageCreate', (message) => {
   botMiddleware.run(message);
 });
 

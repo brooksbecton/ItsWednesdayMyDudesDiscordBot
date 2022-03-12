@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 
 class Webhook {
   constructor() {
-    this.hook = new Discord.WebhookClient(process.env.webhookId, process.env.webhookToken);
+    this.hook = new Discord.WebhookClient({ url: process.env.webhookUrl });
   }
 
   sendMessage(msg: string) {
