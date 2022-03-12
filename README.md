@@ -51,8 +51,7 @@ You will need an .env file in the root of the project with structure like
 ```env
 token="YOUR_TOKEN"
 botname="YOUR_BOTS_NAME"
-webhookId="YOUR_WEBHOOK_ID"
-webhookToken="YOUR_WEBHOOK_TOKEN"
+webhookUrl="YOUR_WEBHOOK_URL"
 youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 ```
 
@@ -67,7 +66,7 @@ youtubeApiKey="YOUR_YOUTUBE_API_KEY"
 
 1. Once added your webhook should look like: `https://discordapp.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN`
 
-1. Pull these out and add to the .env file
+1. Add webhook URL to "webhookUrl"in the .env file
 
 ## Running the tests
 
