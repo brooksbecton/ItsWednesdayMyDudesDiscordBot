@@ -46,7 +46,7 @@
     "eslint-plugin-flowtype": "^4.5.2",
     "eslint-plugin-import": "^2.19.1",
     "flow-bin": "^0.114.0",
-    "flow-typed": "^2.6.2",
+    "flow-typed": "^3.8.0",
     "jest": "^24.9.0"
   },
   "jest": {
